@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Nosotros{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/about.jpg' %}" alt="">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Colectivo Rectángulo</span>
+              <span class="section-heading-lower">Nuestra historia</span>
+            </h2>
+
+            <p>El Colectivo Rectángulo, creado el año 2012 por Richard Salgado y Miguel Luna, son los creadores de la serie WebDoc Rectángulo en el ojo, la cual invitan a conocer un fragmento de la historia, el oficio y la creación fotográfica chilena.
+
+              La primera entrega fue Rectángulo en el ojo el año 2014, donde se exploró en el trabajo de Fabián España, Zaida González, Cristóbal Olivares, Mauricio Toro Goya y Mauricio Valenzuela; el 2018 vino Íconos de la fotografía chilena del S. XX, un trabajo de recuperación histórica de la obra de Marcos Chamudes, Gertrudis De Moses, Lola Falcón, Alfredo Molina la Hitte, Luis Ladrón de Guevara y Antonio Quintana. Latidos, proceso creativo de seis fotógrafas chilenas (2019) es la última parte de esta trilogía, que invita a sumergirse en las propuestas del Colectivo Cholita Chic, Catalina de la Cruz, Kena Lorenzini, Julia Toro, Gabriela Rivera y Verónica Soto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
