@@ -332,6 +332,9 @@ a.logo {
   height: auto; /* Para mantener la proporción */
   /* Otros estilos si es necesario */
 }
-ul, ol {
-  list-style: none;
-}
+/* Ajusta la posición del icono de flecha en los elementos desplegables */
+
+
+
+
+

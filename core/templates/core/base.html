@@ -65,18 +65,15 @@
             <li class="nav-item px-lg-4 {% if request.path == '/contacto/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'contacto' %}">Contacto</a>
             </li>
-
-            <li class="nav-item px-lg-4 {% if request.path == '/colaboraciones/' %}active{% endif %}" onclick="toggleSubMenu(event)">
-              <a class="nav-link text-uppercase text-expanded" href="#">Colaboraciones</a>
-                <ul>
-                  <li>
-                    <a href="#">Fotografía</a>
-                  </li>
-                  <li>
-                    <a href="#">Audiovisual</a>
-                  </li>
-                </ul>
-            </li 
+            <li class="nav-item dropdown px-lg-4 {% if request.path == '/colaboraciones/' %}active{% endif %}">
+              <a class="nav-link dropdown-toggle text-uppercase text-expanded " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Colaboraciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="nav-link text-uppercase text-expanded dropdown-item" href="#">Fotografía</a>
+                <a class="nav-link text-uppercase text-expanded dropdown-item" href="#">Audivisual</a> 
+              </div>
+            </li>      
           </ul>
         </div>
       </div>
